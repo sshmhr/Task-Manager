@@ -1,0 +1,47 @@
+html {
+    background: #9053c7;
+    background: linear-gradient(80deg, #c850c0, #4158d0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.text {
+    padding-left: 1em;
+}
+
+.disabled {
+    display: none;
+}
+
+.removed {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #7c39b6;
+    border-radius: 20px;
+    position: relative;
+    display: inline-flexbox;
+    margin: 1em 5em;
+    height: 30px;
+    width: 300px;
+}
+
+.progress-done {
+    background: linear-gradient(50deg, #620d7c, #421791);
+    box-shadow: 0 3px 3px -5px #602dbe, 0 2px 5px #602dbe;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: 1s;
+}

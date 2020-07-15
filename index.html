@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/materialize.min.css" />
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper purple darken-4">
+            <a href="#" class="brand-logo center">Task Manager</a>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 3em;">
+        <div class="section row">
+            <div class="col s3">
+                <a href="#" id="add-server" class="waves-effect waves-teal  white-text purple darken-4 btn-flat">
+                    Add Server
+                </a>
+            </div>
+            <div class="col s3">
+                <div style="text-align: center;"><b>Total Servers:</b>
+                    <p id="server-count">1</p>
+                </div>
+            </div>
+            <div class="col s3">
+                <div style="text-align: center;"><b>Servers Yet To Be Removed</b>
+                    <p id="servers-to-be-removed">0</p>
+                </div>
+            </div>
+            <div class="col s3" style="text-align: right;">
+                <a href="#" id="remove-server" class="waves-effect waves-teal  white-text purple darken-4 btn-flat">
+                    Remove Server
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input type="number" placeholder="No Of Tasks" class="purple-text text-darken-4 " id="number-of-tasks">
+            </div>
+            <div class="input-field col s6 ">
+                <a href=" # " class="waves-effect waves-teal white-text purple darken-4 btn-flat " id="add-task">
+                    Add Tasks
+                </a>
+            </div>
+        </div>
+
+
+        <div class="row ">
+            <div class="col s12 ">
+                <div class="card purple darken-4">
+                    <div class="card-content white-text ">
+                        <span class="card-title ">Tasks</span>
+                    </div>
+                    <div id="tasks" class="container "></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/materialize.min.js "></script>
+    <script type="text/javascript " src="scripts/utilities.js "></script>
+    <script type="text/javascript " src="scripts/userScripts.js "></script>
+</body>
+
+</html>
